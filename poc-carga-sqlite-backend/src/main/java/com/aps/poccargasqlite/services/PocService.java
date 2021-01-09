@@ -30,10 +30,6 @@ public class PocService {
     @Autowired
     private PessoaRepository pessoaRepository;
 
-    public File gerarBancoDadosHibernate() {
-        
-    }
-
     /**
      * Método que gera e popula um banco de dados Sqlite utilizando JDBCTemplate
      *

@@ -14,7 +14,7 @@ public class DefaultHibernateSqliteDatasource {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getProperty("driverClassName"));
+        dataSource.setDriverClassName("org.sqlite.JDBC");
         dataSource.setUrl(env.getProperty("url"));
         dataSource.setUsername(env.getProperty("user"));
         dataSource.setPassword(env.getProperty("password"));
